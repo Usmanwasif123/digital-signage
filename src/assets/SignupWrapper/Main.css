@@ -18,7 +18,7 @@
     align-items: center;
     justify-content:center;
     top: 20%;
-    left: 20%;
+    left: 55% !important;
     font-size: 50px;
     font-weight: 600;
     color: #C55E5F;
@@ -26,11 +26,8 @@
 .digi-para{
     position: absolute;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content:center;
     top: 30%;
-    left: 20.5%;
+    left: 55% !important;
     font-size: 20px;
     font-weight: 600;
     color: #333;
@@ -40,7 +37,7 @@
     position:absolute;
     z-index: 1;
     top: 40%;
-    left: 20%;
+    left: 55%;
 }
 .singup-container .email{
     position: absolute;
@@ -80,12 +77,11 @@
     padding: 5px 165px 5px 165px;
 
 }
-
 .make-account{
     position: absolute;
     z-index: 1;
     top: 80%;
-    left: 20%;
+    left: 55% !important;
     font-size: 20px;
     font-weight: 500;
     color: #808080;
@@ -96,7 +92,7 @@
     position: absolute;
     z-index: 1;
     top: 80%;
-    left: 37%;
+    left: 72%;
     font-size: 20px;
     font-weight: 500;
     color:  #C55E5F;
@@ -107,7 +103,7 @@
     position: absolute;
     z-index: 1;
     top: 95%;
-    left: 3%;
+    left: 55% !important;
     color:  #808080;
     font-size: 16px;
     font-weight: 500;
@@ -118,7 +114,7 @@
     position: absolute;
     z-index: 1;
     top: 95%;
-    left: 19%;
+    left: 71% !important;
     color:  #C55E5F;
     font-size: 16px;
     font-weight: 500;
@@ -128,7 +124,7 @@
     position: absolute;
     z-index: 1;
     top: 95%;
-    left: 32.5%;
+    left: 84.6% !important;
     color:  #C55E5F;
     font-size: 16px;
     font-weight: 500;
@@ -140,10 +136,9 @@
     background: url('https://i.ibb.co/j6Lr6xz/image.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 607px;
-    width: 500px;
-    left: 63%;
-    margin-left:5px
-
-
+    height: 600px;
+    width: 600px !important;
+    left: -1%;
+    margin-left: 14px !important;
+    border-radius: 10px;
 }
