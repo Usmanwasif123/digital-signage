@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Main from  '../SignupComp/Main'
 
 const Signup = () => {
   return (
-    <div>
-      Signup
-    </div>
+    <Main/>
   )
 }
 
