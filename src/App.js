@@ -8,7 +8,7 @@ function App() {
     return (
       <Router>
         <Routes>
-          <Route exact path='/' element={<Dashboard/>}/>
+          <Route exact path='/device' element={<Dashboard/>}/>
           <Route exact path='/signin' element={<Signin/>}/>
           <Route exact path='/signup' element={<Signup/>}/>
         </Routes>

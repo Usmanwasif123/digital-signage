@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../DashComp/Navbar';
+import Sidebar from '../DashComp/Sidebar';
+import Searchbar from '../DashComp/Searchbar'
 
 const Dashboard = () => {
   return (
     <div>
-      Dashboard
+      <Navbar />
+      <Sidebar/>
+      <Searchbar/>
     </div>
   )
 }

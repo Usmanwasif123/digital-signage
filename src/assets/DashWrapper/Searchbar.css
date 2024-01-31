@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.search-container{
+    position: relative;
+    z-index: 1;
+    height: 12vh;
+    background: #F3F5F5;
+    width: 94vw;
+    margin-left: 82px;
+}
+
+.signout-image img{
+    position: absolute;
+    z-index: 2;
+    height: 60px;
+    left: -5.5%;
+    top: 30%;
+}
+.search-container p{
+    font-size: 20px;
+    margin-left: -80px;
+    padding-top: 100px;
+}
+
+.screen-image img{
+    position: absolute;
+    z-index: 2;
+    height: 60px;
+    left: -5.5%;
+    top: 200%;
+}
+
+
