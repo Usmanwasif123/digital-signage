@@ -56,7 +56,7 @@ const Dashboard = () => {
     setShowPaymentPrompt(false);
   };
   
-  
+    
     useEffect(() =>{
       axios.get('http://localhost:8000/device')
       .then(res => {
