@@ -56,9 +56,9 @@ const Dashboard = () => {
     setShowPaymentPrompt(false);
   };
   
-    
+
     useEffect(() =>{
-      axios.get('http://localhost:8000/device')
+      axios.get('http://localhost:8000/device', { withCredentials: true })
       .then(res => {
         console.log(res.data)
         if(res.data === 'Success'){
