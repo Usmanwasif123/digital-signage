@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container{
+    position: relative;
+    z-index: 1;
+    height: 5vh;
+    background: #1386ac;
+}
+
+.navbar-container .yaxi-para{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    top: -10% !important;
+    left: 1% !important;
+    font-size: 50px;
+    font-weight: 600;
+    color: #C55E5F;
+}
+.sidebar-menu{
+    position: absolute;
+    margin-top: 60px;
+    z-index: 0;
+    height: 90.1vh;
+    background:rgb(114, 112, 112);
+    width: 6vw;
+}
