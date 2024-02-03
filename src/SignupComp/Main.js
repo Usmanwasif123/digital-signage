@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate()
   const handleSubmit = (e) => {
       e.preventDefault()
-      axios.post('http://localhost:8000/signup', {email, password})
+      axios.post('http://localhost:3000/signup', {email, password})
       .then(res => {
         navigate('/signin')
       }).catch(err => console.log(err))
