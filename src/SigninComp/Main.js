@@ -2,35 +2,44 @@ import React, { useState } from 'react';
 import '../assets/SigninWrapper/Main.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import {toast} from 'react-hot-toast';
 
 const Navbar = () => {
-  const [email, setEmail] = useState()
-  const [password, setPassword] = useState()
+ const [data, setData] =useState({
+  email: '',
+  password: '',
+ })
   const navigate = useNavigate()
 
-  axios.defaults.withCredentials = true;
-  const handleSubmit = (e) => {
+
+  const loginUser = async (e) =>{
     e.preventDefault()
-    axios.post('http://localhost:8000/signin', {email, password})
-    .then(res => {
-      console.log(res.data)
-      if(res.data.Status === "Success"){
+    const {email, password} = data
+    try {
+      const {data} = await axios.post('/signin',{
+        email, password
+      });
+      if(data.error){
+        toast.error(data.error)
+      } else {
+        setData({});
         navigate('/device')
-      } else{
-        navigate('/signin')
       }
-    }).catch(err => console.log(err))
-}
+    } catch (error) {
+      
+    }
+  }
+
   return (
     <div className='signin-container'>
       <div className='sigin-logo'>
         <p className='yaxi-para'>YAXI</p>
         <p className='digi-para'>Digital signage</p>
       </div>
-      <form className='signin-form' onSubmit={handleSubmit}>
-        <input className='email' text='email' name='Email' placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
-        <input className='password' text='password' name='Password' placeholder='Password' onChange={(e) => setPassword(e.target.value)}/>
-        <Link to='/device'><button className='sign-button'>sign&nbsp;in</button></Link>
+      <form className='signin-form' onSubmit={loginUser}>
+        <input className='email' type='email' name='Email' placeholder='Email' value={data.email} onChange={(e) => setData({...data, email: e.target.value})}/>
+        <input className='password' type='password' name='Password' placeholder='Password'  value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
+        <Link to='/device'><button type='submit' className='sign-button'>sign&nbsp;in</button></Link>
       </form>
       
       <p className='forget-pass'>Forget password</p>

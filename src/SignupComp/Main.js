@@ -2,17 +2,31 @@ import React, { useState } from 'react';
 import '../assets/SignupWrapper/Main.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import {toast} from 'react-hot-toast';
 
 const Navbar = () => {
-  const [email, setEmail] = useState()
-  const [password, setPassword] = useState()
+  const [data, setData] =useState({
+    email: '',
+    password: '',
+   })
   const navigate = useNavigate()
-  const handleSubmit = (e) => {
-      e.preventDefault()
-      axios.post('http://localhost:3000/signup', {email, password})
-      .then(res => {
-        navigate('/signin')
-      }).catch(err => console.log(err))
+  const SignupUser = async (e) => {
+      e.preventDefault();
+      const {email, password} = data
+      try {
+        const {data} = await axios.post('/signup', {
+          email, password
+        })
+        if(data.error){
+          toast.error(data.error)
+        } else{
+            setData({})
+            toast.success('Sign in Successful.')
+            navigate('/signin')
+        }
+      } catch (error) {
+        console.log(error)
+      }
   }
   return (
     <div className='singup-container'>
@@ -20,10 +34,10 @@ const Navbar = () => {
         <p className='yaxi-para'>YAXI</p>
         <p className='digi-para'>Digital signage</p>
       </div>
-      <form className='singup-form' onSubmit={handleSubmit}>
-        <input className='email' text='email' name='Email' placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
-        <input className='password' text='password' name='Password' placeholder='Password' onChange={(e) => setPassword(e.target.value)}/>
-        <button className='signup-button'>sign&nbsp;up</button>
+      <form className='singup-form' onSubmit={SignupUser}>
+      <input className='email' type='email' name='Email' placeholder='Email' value={data.email} onChange={(e) => setData({...data, email: e.target.value})}/>
+        <input className='password' type='password' name='Password' placeholder='Password'  value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
+        <button type='submit' className='signup-button'>sign&nbsp;up</button>
       </form>
       <p className='make-account'>Already have an account?</p>
       <Link  to='/signin'className='signin-link'>Sign&nbsp;in</Link>

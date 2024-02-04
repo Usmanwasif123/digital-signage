@@ -15,7 +15,6 @@ const Dashboard = () => {
   const [showPrompt, setShowPrompt] = useState(false);
   const [showMap, setShowMap] = useState(true);
   const [showPaymentPrompt, setShowPaymentPrompt] = useState(false);
-  const[success, setSuccess] = useState()
   const navigate = useNavigate()
 
   const handleShowPrompt = () => {
@@ -58,15 +57,6 @@ const Dashboard = () => {
   
 
     useEffect(() =>{
-      axios.get('http://localhost:8000/device', { withCredentials: true })
-      .then(res => {
-        console.log(res.data)
-        if(res.data === 'Success'){
-          setSuccess("Success")
-        } else{
-          navigate("/signin")
-        }
-      }).catch(err => console.log(err))
     })
 
   return (

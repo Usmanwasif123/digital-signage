@@ -4,11 +4,19 @@ import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import Content from './pages/Content';
+import axios from 'axios';
+import {Toaster} from 'react-hot-toast';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+
+axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.withCredentials = true
 
 function App() {
     return (
+      
       <Router >
+        <Toaster position='top-right' toastOptions={{duration: 2000}}/>
         <Routes>
           <Route exact path='/device' element={<Dashboard/>}/>
           <Route exact path='/signin' element={<Signin/>}/>
@@ -18,6 +26,7 @@ function App() {
           <Route path="/" element={<Navigate to="/signin" />} />
         </Routes>
       </Router>
+      
     );
 }
 
