@@ -13,7 +13,6 @@ const Sidebar = ({onShowScreens}) => {
   return (
     <div className="sidebar">
       <ul>
-        <li><Link to="/device" onClick={handleScreenClick}></Link></li>
         <li>
         <Link to="/profile"><img className='sidebar-profile' src='https://i.ibb.co/pL8rsqy/Asset-4.png'/></Link></li>
         <li className='signout' >
@@ -27,8 +26,6 @@ const Sidebar = ({onShowScreens}) => {
 
         <li>
         <Link to="/profile"><img className='sidebar-chat' src='https://i.ibb.co/MVtW40s/image.png'/></Link></li>
-        
-      
       </ul>
     </div>
   )

@@ -75,6 +75,15 @@ const DashboardNavbar = () => {
           <p>If you don’t have your own device yet, you can always order our versatile plug’n’play media players suitable for 
             any digital signage screens with HDMI input</p>
             <button className='look-btn'>Buy Look player</button>
+            <div className='download-play-div'>
+            <p className='download-play'>Download player:</p>
+            <img className='google-play' src='https://i.ibb.co/BGMNfcw/Link.png'/>
+            <img className='amazon-play' src='https://i.ibb.co/r2WNGM7/Group.png'/>
+            <img className='window-play' src='https://i.ibb.co/xLQ50Sd/Link.png'/>
+            <img className='apple-play' src='https://i.ibb.co/tmPwzyV/Link-1.png'/>
+            <img className='penguie-play' src='https://i.ibb.co/tYH1STB/Link-2.png'/>
+            </div>
+            
         </div>
       )}
 

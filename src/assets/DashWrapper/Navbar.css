@@ -112,7 +112,7 @@
     top: 0;
     right: 0;
     width: 300px; /* Adjust the width as needed */
-    height: 410px; 
+    height: 470px; 
     background-color: white;
     padding: 60px;
     border: 1px solid #ccc;
@@ -153,4 +153,64 @@
     margin-left: 20px;
     margin-top: 10px;
     text-transform: uppercase;
+}
+
+.navbar-dropdown-notifcation-div .download-play-div{
+    background: #f3f5f5;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 380px;
+    height: 80px;
+    margin-left: -60px;
+    margin-top: 110px;
+
+}
+
+.download-play-div .download-play{
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.download-play-div .google-play{
+    margin-top: -100px;
+    margin-left: 50px;
+    z-index: 2;
+}
+.download-play-div .google-play{
+    position: absolute;
+    top: 632px;
+    left: 30%;
+    margin-left: 50px;
+    z-index: 2;
+}
+.download-play-div .amazon-play{
+    position: absolute;
+    top: 535px;
+    left: 40%;
+    margin-left: 50px;
+    z-index: 2;
+}
+.download-play-div .window-play{
+    position: absolute;
+    top:530px;
+    left: 50%;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.download-play-div .apple-play{
+    position: absolute;
+    top:530px;
+    left: 60%;
+    margin-left: 50px;
+    z-index: 2;
+}
+.download-play-div .penguie-play{
+    position: absolute;
+    top:530px;
+    left: 70%;
+    margin-left: 50px;
+    z-index: 2;
 }
