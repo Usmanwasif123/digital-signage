@@ -169,14 +169,13 @@
 .google-button {
     display: block; /* Display the button as a block element */
     margin-top: 430px;
-    margin-left: 750px; 
+    margin-left: 720px; 
     position: absolute;
     z-index: 1;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 4px;
-    padding-left: 200px;
     padding-top: 20px;
     font-size: 16px;
     font-weight: bold;
@@ -185,24 +184,20 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  .google-signin-button img {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-  }
+  
 
   .apple-button {
     display: block;
     margin-top: 430px;
-    margin-left: 900px; /* Adjust the left margin to position it beside the Google button */
+    margin-left: 905px; /* Adjust the left margin to position it beside the Google button */
     position: absolute;
     z-index: 1;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 4px;
-    padding-left: 0px; /* Adjust padding as needed */
-    padding-top: 10px; /* Adjust padding as needed */
+    padding-right: 20px;
+    padding-top: 0px; /* Adjust padding as needed */
     font-weight: bold;
     color: #fff;
     font-size: 20px;
@@ -232,7 +227,7 @@
 .facebook-button {
     display: block;
     margin-top: 430px;
-    margin-left: 1040px; /* Adjust the left margin to position it beside the Google button */
+    margin-left: 1058px; /* Adjust the left margin to position it beside the Google button */
     position: absolute;
     z-index: 1;
     align-items: center;
