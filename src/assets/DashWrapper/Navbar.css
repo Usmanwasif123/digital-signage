@@ -6,21 +6,19 @@
 .navbar-container{
     position: relative;
     z-index: 1;
-    height: 5vh;
+    height: 10vh;
     background: #1386ac;
+    margin-left: -150px;
+}
+.navbar-container .yaxi-logo{
+    margin-left: 70px;
 }
 
-.navbar-container .yaxi-para{
+.navbar-container .navbar-right{
     position: absolute;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    top: -10% !important;
-    left: 1% !important;
-    font-size: 50px;
-    font-weight: 600;
-    color: #C55E5F;
+    z-index: 2;
+    margin-left: 1000px;
+    margin-top: -40px;
 }
 .sidebar-menu{
     position: absolute;
@@ -29,4 +27,130 @@
     height: 90.1vh;
     background:rgb(114, 112, 112);
     width: 6vw;
+}
+.stats-icon{
+    height: 30px;
+    font-size: 30px;
+    position: absolute; 
+    margin-left: -50px;
+    margin-top: -10px;
+}
+.notification-icon{
+    height: 30px;
+    font-size: 30px;
+    position: absolute; 
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.user-icon {
+    height: 30px;
+    font-size: 30px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 70px;
+}
+
+.setting-icon{
+    height: 30px;
+    font-size: 30px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 130px;
+}
+
+.heading-company{
+    position: absolute;
+    z-index: 1;
+    
+    align-items: center;
+    justify-content:center;
+    
+    margin-left: 1200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.Company{
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+    margin-top: -20px;
+    display: inline-flex;
+    margin-left: 180px;
+}
+
+.language-dropdown{
+        position: absolute;
+        z-index: 5;
+        font-size: 20px;
+        margin-left: 270px;
+        background: #fff;
+        color: #808080;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 35px;
+        cursor: pointer;
+ 
+}
+
+.dropdown-toggle{
+    position: absolute;
+    z-index: 2;
+    margin-top: -10px;
+    margin-left: 300px;    
+}
+
+.navbar-dropdown-notifcation-div{
+    position: absolute;
+    background: #fff;
+    margin-left: 200px;
+    padding-bottom: 50px;
+    margin-top: 60px;
+    top: 0;
+    right: 0;
+    width: 300px; /* Adjust the width as needed */
+    height: 410px; 
+    background-color: white;
+    padding: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Ensure the content appears above other elements */
+
+}
+
+.navbar-dropdown-notifcation-div  h1{
+    font-size: 25px;
+    color: #333;
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+
+.navbar-dropdown-notifcation-div  p{
+    font-size: 20px;
+    color: #555454;
+    padding: 20px 1px 20px 1px;
+    margin-top: 10px;
+}
+
+.navbar-container .navbar-dropdown-notifcation-div  .look-btn{
+    background: transparent;
+    color: #333 ;
+    border: none;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #1386ac;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }

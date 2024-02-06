@@ -2,18 +2,22 @@
 
 .sidebar {
     height: 100vh;
-    width: 10%;
+    width: 7%;
     position: relative;
-    top: 10%;
     left: 0;
-    background-color: #1386ac;
+    background: #1386ac;
     padding-top: 20px;
     color: white;
+    margin-top: 60px;
+    z-index: 0;
+
   }
   
   .sidebar h1 {
     text-align: center;
     margin-bottom: 10vh;
+    text-decoration: none;
+
     
   }
   
@@ -27,11 +31,71 @@
   .sidebar li {
     padding: 8px;
     text-align: center;
-    border-bottom: 1px solid #555;
+    border-bottom: none;
+    text-decoration: none;
+
   }
   
   .sidebar li:hover {
-    background-color:  #abbeca;
     cursor: pointer;
   }
   
+ 
+
+  .sidebar-profile{
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+    margin-left: -25px;
+    margin-top: -15px;
+  }
+
+  .sidebar .signout{
+      color: #333 !important;
+      font-size: 17px;
+      margin-left: -7px;
+      margin-top: 30px;
+  }
+
+  .sidebar-screen{
+    height: 35px;
+    position: absolute;
+    z-index: 5;
+    margin-left: -50px;
+
+}
+  .sidebar-content{
+    position: absolute;
+    z-index: 1;
+    height: 35px;
+    margin-left: -28px;
+    margin-top: 100px;
+  }
+
+  .signout{
+     text-decoration: none;
+  }
+
+  .sidebar-video{
+    position: absolute;
+    z-index: 1;
+    height: 30px;
+    margin-left: -28px;
+    margin-top: 150px;
+  }
+
+  .sidebar-schedule{
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+    margin-left: -27px;
+    margin-top: 200px;
+  }
+
+  .sidebar-chat{
+    position: absolute;
+    z-index: 1;
+    height: 35px;
+    margin-left: -27px;
+    margin-top: 320px;
+  }

@@ -21,7 +21,7 @@ const Navbar = () => {
           toast.error(data.error)
         } else{
             setData({})
-            toast.success('Sign in Successful.')
+            toast.success('Sign up Successful.')
             navigate('/signin')
         }
       } catch (error) {

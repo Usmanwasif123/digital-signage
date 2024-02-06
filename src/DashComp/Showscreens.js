@@ -28,7 +28,7 @@ const ShowScreens = () => {
 
   return (
     <div className='screen-containers' >
-      <h2 style={{marginBottom:'10px'}}>Show Screens</h2>
+      <h2 style={{marginBottom:'10px',}}>Show Screens</h2>
 
 
       <div style={{ display: 'flex', gap: '10px' }}>
@@ -36,11 +36,12 @@ const ShowScreens = () => {
       <Card sx={{ maxWidth: 345, width: 302 }}>
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Screen 1
+            <Typography gutterBottom variant="h5" component="div" style={{background: '#1386ac', color: '#fff',
+            fontSize: '18px', borderRadius: '5px', display: 'inline-block', padding: '1px',fontWeight: '500'}}>
+              Demo Screen
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              This is the first screen to be shown
+            <Typography variant="body2" color="text.secondary" style={{color: '#808080'}}>
+              5.02.2024, 8:022
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -56,7 +57,7 @@ const ShowScreens = () => {
             <Typography
               variant="h5"
               component="div"
-              style={{ textAlign: 'center', fontSize: '2em' }}
+              style={{ textAlign: 'center', fontSize: '2em', color: '#1386ac' }}
             >
               +
             </Typography>

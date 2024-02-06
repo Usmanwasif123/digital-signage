@@ -8,14 +8,13 @@ import MapContainer from '../DashComp/Mapcontainer';
 import ShowScreens from '../DashComp/Showscreens';
 import Paymentpromptscreen from '../DashComp/Paymentpromptscreen';
 import '../assets/DashWrapper/Dashboard.css'
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+
+
 
 const Dashboard = () => {
   const [showPrompt, setShowPrompt] = useState(false);
   const [showMap, setShowMap] = useState(true);
   const [showPaymentPrompt, setShowPaymentPrompt] = useState(false);
-  const navigate = useNavigate()
 
   const handleShowPrompt = () => {
     setShowPrompt(true);
@@ -56,10 +55,7 @@ const Dashboard = () => {
   };
   
 
-    useEffect(() =>{
-    })
-
-  return (
+   return (
     <div className="dashboard-container">
    
    <div className="content-container">
