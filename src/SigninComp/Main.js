@@ -62,7 +62,8 @@ const Signin = () => {
       if (data.error) {
         toast.error(data.error);
       } else {
-        if (data.role === 'admin') {
+        console.log(email)
+        if (email !== 'admin@gmail.com') {
           setData({});
           toast.success('User Sign in Successful.');
           navigate('/device');
