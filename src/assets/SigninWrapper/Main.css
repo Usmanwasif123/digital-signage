@@ -18,8 +18,8 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    margin-top: -30px;
-    top: 10%;
+    margin-top: -90px;
+    top: 5%;
     left: 55% !important;
     font-size: 50px;
     font-weight: 600;
@@ -28,7 +28,7 @@
 .digi-para{
     position: absolute;
     z-index: 1;
-    margin-top: -30px;
+    margin-top: -85px;
     top: 30%;
     left: 55%;
     font-size: 20px;
@@ -39,7 +39,7 @@
 .signin-form{
     position:absolute;
     z-index: 1;
-    margin-top: -30px;
+    margin-top: -70px;
     top: 40%;
     left: 55%;
     display: flex;
@@ -61,7 +61,7 @@
     z-index: 1;
     font-size: 20px;
     font-weight: 500;
-    padding-right: 150px;
+    padding-right: 100px;
     border: none;
     border-bottom: 2px solid #808080;
     margin-top: 60px;
@@ -81,14 +81,16 @@
     text-transform: uppercase;
     border: none;
     margin-top: 150px;
-    padding: 10px 210px 10px 210px;
+    padding: 10px 200px 10px 200px;
     white-space: nowrap;
+    top: 0%;
+    max-width: 400px;
 }
 
 .forget-pass{
     position: absolute;
     z-index: 1;
-    margin-top: -30px;
+    margin-top: -60px;
     top: 55%;
     left: 75%;
     font-size: 15px;
@@ -99,8 +101,8 @@
 .make-account{
     position: absolute;
     z-index: 1;
-    margin-top: 20px;
-    top: 90%;
+    margin-top: 45px;
+    top: 95%;
     left: 55%;
     font-size: 20px;
     font-weight: 500;
@@ -112,7 +114,7 @@
     position: absolute;
     z-index: 1;
     margin-top: 20px;
-    top: 80%;
+    top: 83.9%;
     left: 71%;
     font-size: 20px;
     font-weight: 500;
@@ -123,7 +125,7 @@
 .agree-term{
     position: absolute;
     z-index: 1;
-    top: 95%;
+    top: 98%;
     left: 55% ;
     color:  #808080;
     font-size: 16px;
@@ -164,12 +166,12 @@
     border-radius: 10px;
 }
 
-/* Google Sign-In button */
+
 
 .google-button {
-    display: block; /* Display the button as a block element */
+    display: block; 
     margin-top: 430px;
-    margin-left: 720px; 
+    margin-left: 760px; 
     position: absolute;
     z-index: 1;
     align-items: center;
@@ -183,36 +185,41 @@
     background-color: #4285f4;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    top: -10%;
+    width: 380px;
   }
   
 
   .apple-button {
     display: block;
+    top: 20%;
     margin-top: 430px;
-    margin-left: 905px; /* Adjust the left margin to position it beside the Google button */
+    margin-left: 760px; 
     position: absolute;
     z-index: 1;
     align-items: center;
+    text-align: center;
     justify-content: center;
     border: none;
     border-radius: 4px;
     padding-right: 20px;
-    padding-top: 0px; /* Adjust padding as needed */
+    padding-top: 0px; 
     font-weight: bold;
     color: #fff;
     font-size: 20px;
     background-color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 360px;
+    max-width: 400px;
+    top: -1%;
   }
   
-  .apple-button:hover {
-    background-color: #000;
-  }
+  
   
   .apple-button > div > div > svg {
     height: 40px;
-    width: 116px; /* Adjust width as needed */
+    width: 116px; 
     z-index: 1;
     color: #fff;
   }
@@ -222,28 +229,28 @@
     width: 20px;
     height: 20px;
   }
-  
-  /* Facebook Sign-In button */
+
 .facebook-button {
     display: block;
     margin-top: 430px;
-    margin-left: 1058px; /* Adjust the left margin to position it beside the Google button */
+    margin-left: 760px; 
     position: absolute;
     z-index: 1;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 4px;
-    padding-left: 20px; /* Adjust padding as needed */
-    padding-right: 10px; /* Adjust padding as needed */
-    padding-top: 10px; /* Adjust padding as needed */
-    padding-bottom: 12px; /* Adjust padding as needed */
+    padding-left: 20px; 
+    padding-right: 10px; 
+    padding-top: 10px; 
+    padding-bottom: 12px; 
     font-weight: bold;
     color: #fff;
     font-size: 15px;
-    background-color: #011755; /* Facebook blue color */
-    cursor: pointer;
+    background-color: #011755; 
     transition: background-color 0.3s ease;
+    top: 8%;
+    width: 380px;
   }
   
   
@@ -252,8 +259,8 @@
         height: auto;
         width: auto;
         display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center elements horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .yaxi-para,
@@ -272,7 +279,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        text-align: center; /* Center text elements */
+        text-align: center; 
         text-decoration: none;
     }
 
@@ -348,9 +355,9 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    /* Styles for small desktops */
+    
   }
 
   @media only screen and (min-width: 1200px) {
-    /* Styles for large desktops */
+    
   }

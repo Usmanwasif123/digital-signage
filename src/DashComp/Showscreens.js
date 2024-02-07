@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../assets/DashWrapper/Showscreens.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import PromptScreen from './PromptScreen';
@@ -27,7 +26,7 @@ const ShowScreens = () => {
   }, []);
 
   return (
-    <div className='screen-containers' >
+    <div className='screen-containers'>
       <h2 style={{marginBottom:'10px',}}>Show Screens</h2>
 
 

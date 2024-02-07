@@ -80,7 +80,7 @@ const Dashboard = () => {
         />
       )}
        </div>
-    <Sidebar />
+    <Sidebar onShowScreens={togglescreens}/>
     </div>
   );
 };

@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../assets/DashWrapper/Sidebar.css'
 import { Link } from 'react-router-dom';
+import ShowScreens from '../DashComp/Showscreens';
 
 
 const Sidebar = ({onShowScreens}) => {
+  const [showScreensVisible, setShowScreensVisible] = useState(false);
 
-  const handleScreenClick = () => {
-    // Call the onShowScreens function when the screen image is clicked
-    onShowScreens();
+  // Function to toggle the visibility of ShowScreens
+  const toggleShowScreens = () => {
+    setShowScreensVisible(!showScreensVisible);
   };
 
   return (
@@ -17,6 +19,8 @@ const Sidebar = ({onShowScreens}) => {
         <Link to="/profile"><img className='sidebar-profile' src='https://i.ibb.co/pL8rsqy/Asset-4.png'/></Link></li>
         <li className='signout' >
         <Link to="/signin" style={{color: '#fff',  }}>Sign out</Link></li>
+        <li>
+        <img onClick={onShowScreens}  style={{marginTop: '25px'}} className='sidebar-content' src='https://i.ibb.co/5KJ2HPJ/Asset-5.png'/></li>
         <li>
         <Link to="/content"><img className='sidebar-content' src='https://i.ibb.co/st71q5V/Asset-6.png'/></Link></li>
         <li>
@@ -31,6 +35,7 @@ const Sidebar = ({onShowScreens}) => {
         <img className='sidebar-chat' src='https://i.ibb.co/MVtW40s/image.png'/>
 
       </ul>
+       {/* Render ShowScreens conditionally */}
     </div>
   )
 }

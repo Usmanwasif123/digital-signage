@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../DashComp/Sidebar';
+import Sidebar from '../DashComp/Sidebaradmin';
 import '../assets/DashWrapper/Profile.css'; 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 
 
 
-const Content = () => {
+const Contentadmin = () => {
 
   return (
     <div className="dashboard-container">
@@ -21,24 +21,23 @@ const Content = () => {
       <Card  sx={{ maxWidth: 345, backgroundColor: '#1386ac', transition: 'transform 0.3s', '&:hover': { transform: 'scale(1.1)' } }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="https://i.ibb.co/8gppr4z/image.png"
+        image="/static/images/cards/contemplative-reptile.jpg"
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Food Content
+          Content number 1
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        Easy Tips To Keep Your Tiffin Food
+          Contents
         </Typography>
       </CardContent>
      
     </Card>
     </div>
-
       <Sidebar />
       </div>
   );
 };
 
-export default Content;
+export default Contentadmin;

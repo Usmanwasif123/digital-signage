@@ -54,16 +54,23 @@ const Signin = () => {
     e.preventDefault();
     const { email, password } = data;
     try {
-      const { data } = await axios.post('/signin', {
+      const response = await axios.post('/signin', {
         email,
         password,
       });
+      const { data } = response;
       if (data.error) {
         toast.error(data.error);
       } else {
-        setData({});
-        toast.success('Sign in Successful.');
-        navigate('/device');
+        if (data.role === 'admin') {
+          setData({});
+          toast.success('Admin Sign in Successful.');
+          navigate('/admin');
+      } else {
+          setData({});
+          toast.success('User Sign in Successful.');
+          navigate('/device');
+      }
       }
     } catch (error) {
       console.error(error);

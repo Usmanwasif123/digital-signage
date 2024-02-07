@@ -1,18 +1,16 @@
-
-
-.sidebar {
+.sidebaradmin {
     height: 94vh;
-    width: 7%;
+    width: 5%;
     position: relative;
     left: 0;
     background: #1386ac;
     padding-top: 20px;
     color: white;
-    margin-top: 60px;
     z-index: 0;
+    padding-left: 30px;
 
   }
-   
+  
   .sidebar h1 {
     text-align: center;
     margin-bottom: 10vh;
@@ -97,7 +95,6 @@
     position: absolute;
     z-index: 1;
     height: 35px;
-    margin-left: 23px;
+    margin-left: -27px;
     margin-top: 370px;
-    cursor: pointer
   }
