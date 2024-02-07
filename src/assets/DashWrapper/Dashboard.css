@@ -1,12 +1,44 @@
-
 .dashboard-container {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-section {
+  flex: 1;
+  margin-right: 20px;
+  border: 2px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 2px 6px 12px rgba(38, 0, 255, 0.1); 
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.recent-activity {
   
-  .content-container {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+  height: 300px;
+  overflow: auto; 
+}
+
+.recent-activities-container {
+  height: 200px; 
+  overflow-y: auto; 
+}
+
+.recent-activities-list {
+  animation: scroll-up 20s linear infinite; 
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
   }
-  
+  100% {
+    transform: translateY(-100%); 
+  }
+}
