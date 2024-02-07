@@ -64,12 +64,12 @@ const Signin = () => {
       } else {
         if (data.role === 'admin') {
           setData({});
-          toast.success('Admin Sign in Successful.');
-          navigate('/admin');
-      } else {
-          setData({});
           toast.success('User Sign in Successful.');
           navigate('/device');
+      } else {
+          setData({});
+          toast.success('Admin Sign in Successful.');
+          navigate('/admin');
       }
       }
     } catch (error) {
