@@ -66,10 +66,7 @@ const DashboardNavbar = () => {
           )}
         </div>
       </Nav>
-
-      {/* Notification dropdown */}
-      {showNotification && (
-        <div className="navbar-dropdown-notifcation-div">
+      <div className="navbar-dropdown-notifcation-div">
           {/* Notification Content */}
           <h1>Need a device?</h1>
           <p>If you don’t have your own device yet, you can always order our versatile plug’n’play media players suitable for 
@@ -85,6 +82,14 @@ const DashboardNavbar = () => {
             </div>
             
         </div>
+
+      {/* Notification dropdown */}
+      {showNotification && (
+        <div className="navbar-dropdown">
+        {/* Settings Content */}
+        No Content
+      </div>
+        
       )}
 
       {/* Settings dropdown */}

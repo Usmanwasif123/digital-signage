@@ -28,9 +28,8 @@ const Sidebar = ({onShowScreens}) => {
         <li>
         <Link to="/schedule"><img className='sidebar-schedule' src='https://i.ibb.co/8jFLw3g/Asset-8.png'/></Link></li>
 
-        <li>
-        <Link to="/" ><img className='sidebar-chat' src='https://i.ibb.co/MVtW40s/image.png'/></Link></li>
-        
+        <img className='sidebar-chat' src='https://i.ibb.co/MVtW40s/image.png'/>
+
       </ul>
     </div>
   )
