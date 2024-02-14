@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Contentadmin from './pages/Contentadmin';
 import Admindash from './pages/Admindash';
 
-axios.defaults.baseURL = 'http://localhost:8000'
+
 axios.defaults.withCredentials = true
 
 function App() {
