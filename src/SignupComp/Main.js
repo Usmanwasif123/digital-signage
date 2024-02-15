@@ -10,12 +10,13 @@ const Navbar = () => {
     email: '',
     password: '',
    })
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  
   const SignupUser = async (e) => {
       e.preventDefault();
       const {email, password} = data
       try {
-        const {data} = await SignupRequest.post('/signup', {
+        const {data} = await axios.post('/signup', {
           email, password
         })
         if(data.error){

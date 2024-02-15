@@ -55,7 +55,7 @@ const Signin = () => {
     e.preventDefault();
     const { email, password } = data;
     try {
-      const response = await SigninRequest.post('/signin', {
+      const response = await axios.post('/signin', {
         email,
         password,
       });
