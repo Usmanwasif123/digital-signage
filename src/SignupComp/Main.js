@@ -18,7 +18,8 @@ const Navbar = () => {
       try {
         const {data} = await axios.post('/signup', {
           email, password
-        })
+        });
+        console.log('signup button clicked');
         if(data.error){
           toast.error(data.error)
         } else{

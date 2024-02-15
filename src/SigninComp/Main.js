@@ -59,6 +59,7 @@ const Signin = () => {
         email,
         password,
       });
+      console.log('signup button clicked');
       const { data } = response;
       if (data.error) {
         toast.error(data.error);
