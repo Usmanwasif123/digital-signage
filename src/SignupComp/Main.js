@@ -3,20 +3,23 @@ import '../assets/SignupWrapper/Main.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import {toast} from 'react-hot-toast';
+import {SignupRequest} from '../axiosConfig'
 
 const Navbar = () => {
   const [data, setData] =useState({
     email: '',
     password: '',
    })
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  
   const SignupUser = async (e) => {
       e.preventDefault();
       const {email, password} = data
       try {
         const {data} = await axios.post('/signup', {
           email, password
-        })
+        });
+        console.log('signup button clicked');
         if(data.error){
           toast.error(data.error)
         } else{

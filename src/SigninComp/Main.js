@@ -5,6 +5,7 @@ import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { GoogleLogin } from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
+import {SigninRequest} from '../axiosConfig';
 
 const clientId = "com.babychakra.alpha1.client";
 const scope = "name email";
@@ -58,6 +59,7 @@ const Signin = () => {
         email,
         password,
       });
+      console.log('signup button clicked');
       const { data } = response;
       if (data.error) {
         toast.error(data.error);
@@ -118,6 +120,7 @@ const Signin = () => {
         </button>
       </form>
 
+<<<<<<< HEAD
       {/* Apple Sign-In button */}
     
 
@@ -127,6 +130,9 @@ const Signin = () => {
       {/* Facebook Sign-In button */}
 
 
+=======
+      
+>>>>>>> 71741527e229ae4be6df71570eed7d6071e0cb8c
       <p className="forget-pass">Forget password</p>
       <p className="make-account">Don't have an account?</p>
       <Link to="/signup" className="signup-link">
