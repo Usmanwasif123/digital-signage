@@ -119,35 +119,13 @@ const Signin = () => {
       </form>
 
       {/* Apple Sign-In button */}
-      <div
-        id="appleid-signin"
-        className="apple-button"
-        data-color="black"
-        data-border="true"
-        data-type="sign-in"
-      ></div>
+    
 
       {/* Google Sign-In button */}
-      <GoogleLogin
-        clientId="YOUR_GOOGLE_CLIENT_ID"
-        buttonText="Sign in with Google"
-        onSuccess={responseGoogle}
-        onFailure={responseGoogle}
-        cookiePolicy={'single_host_origin'}
-        className="google-button"
-      />
+      
 
       {/* Facebook Sign-In button */}
-      <FacebookLogin
-        appId="YOUR_FACEBOOK_APP_ID"
-        autoLoad={false}
-        fields="name,email,picture"
-        callback={responseFacebook}
-        cssClass="facebook-button"
-        icon={<i className="fa fa-facebook" style={{ marginRight: '0px' }} />}
-        textButton="Sign in with Facebook"
-        isTestUser={true}
-      />
+
 
       <p className="forget-pass">Forget password</p>
       <p className="make-account">Don't have an account?</p>
