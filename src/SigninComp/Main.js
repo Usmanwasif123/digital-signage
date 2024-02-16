@@ -120,8 +120,7 @@ const Signin = () => {
         </button>
       </form>
 
-<<<<<<< HEAD
-      {/* Apple Sign-In button */}
+     {/* Apple Sign-In button */}
     
 
       {/* Google Sign-In button */}
@@ -130,9 +129,7 @@ const Signin = () => {
       {/* Facebook Sign-In button */}
 
 
-=======
-      
->>>>>>> 71741527e229ae4be6df71570eed7d6071e0cb8c
+
       <p className="forget-pass">Forget password</p>
       <p className="make-account">Don't have an account?</p>
       <Link to="/signup" className="signup-link">
